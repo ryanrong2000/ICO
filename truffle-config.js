@@ -1,15 +1,9 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
-const mnemonic = "brain jar media pulp prize east design hard frequent pyramid live special";
+const mnemonic = "removed";
 
 module.exports = {
 
-  plugins:[
-    'truffle-plugin-verify'
-  ],
-
-  api_keys:{
-    etherscan:'GJ35EU13VHMFPFVECX1KUNJICD3K1EQU5Q'
-  },
+  
   /**
    * Networks define how you connect to your ethereum client and let you set the
    * defaults web3 uses to send transactions. If you don't specify one truffle
@@ -29,7 +23,7 @@ module.exports = {
 
     ropsten: {
       provider: function() {
-        return new HDWalletProvider(mnemonic, "https://ropsten.infura.io/v3/5c86d4566e0544798e4f46664b69cb19")
+        return new HDWalletProvider(mnemonic, "removed")
       },
       network_id: 3
     }
